@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "\nAll In One Installer For Arch Linux\n"
+echo -e "\nAll In One Installer For Arch Linux, It Installs Git, Curl, Wget, Fish Shell, ADB Fastboot, Android-Udev, Heimdall, Gvfs, Gvfs-MTP, Cava, Figlet, Lolcat, Sl, Usbutils, Ptyxis, Cowsay, Fastfetch, Vim, Nano, Bat, Eza, Pipes.sh, Chrome, Brave Browser, Zen Browser, Firefox, Balena Etcher, And Ventoy.\n"
 
 sleep 1
 
