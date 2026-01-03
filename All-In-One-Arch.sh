@@ -8,18 +8,18 @@ echo -e "\nThis Script Runs Invisible, Not Seeing An Output Does Not Mean It Is 
 
 sleep 7
 
-sudo pacman -Syu --noconfirm &>/dev/null
+sudo pacman -Syu --noconfirm
 
-sudo pacman -S git curl wget fish acpi efibootmgr android-tools android-udev heimdall gvfs gvfs-mtp cava figlet lolcat sl usbutils ptyxis cowsay fastfetch vim nano bat eza --noconfirm &>/dev/null
+sudo pacman -S git curl wget fish acpi efibootmgr android-tools android-udev heimdall gvfs gvfs-mtp cava figlet lolcat sl usbutils ptyxis cowsay fastfetch vim nano bat eza --noconfirm
 
-rm -rf /home/$USER/yay &>/dev/null
-git clone https://aur.archlinux.org/yay.git &>/dev/null
-cd yay &>/dev/null
-makepkg -si --noconfirm &>/dev/null
+rm -rf /home/$USER/yay
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si --noconfirm
 
-cd &>/dev/null
+cd
 
-yay -S pipes.sh google-chrome brave-browser zen-browser-bin firefox balena-etcher ventoy-bin --noconfirm &>/dev/null
+yay -S pipes.sh google-chrome brave-browser zen-browser-bin firefox balena-etcher ventoy-bin --noconfirm
 
 chsh -s /usr/bin/fish
 
