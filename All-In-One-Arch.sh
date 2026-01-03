@@ -6,6 +6,8 @@ sleep 1
 
 echo -e "\nThis Script Runs Invisible, Not Seeing An Output Does Not Mean It Is Frozen, Okay?\n"
 
+sleep 7
+
 sudo pacman -Syu --noconfirm &>/dev/null
 
 sudo pacman -S git curl wget fish acpi efibootmgr android-tools android-udev heimdall gvfs gvfs-mtp cava figlet lolcat sl usbutils ptyxis cowsay fastfetch vim nano bat eza --noconfirm &>/dev/null
