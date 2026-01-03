@@ -1,6 +1,6 @@
 #!/bin/bash
 
-figlet "All In One Installer For Arch!"
+echo -e "\nAll In One Installer For Arch Linux\n"
 
 sleep 1
 
