@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "\nAll In One Installer For Arch Linux, It Installs Git, Curl, Wget, Fish Shell, ADB Fastboot, Android-Udev, Heimdall, Gvfs, Gvfs-MTP, Cava, Figlet, Lolcat, Sl, Usbutils, Ptyxis, Cowsay, Fastfetch, Vim, Nano, Bat, Eza, Pipes.sh, Chrome, Brave Browser, Zen Browser, Firefox, Balena Etcher, And Ventoy.\n"
+echo -e "\nAll In One Installer For Arch Linux, It Installs Git, Curl, ACPI, Efibootmgr Wget, Fish Shell, ADB Fastboot, Android-Udev, Heimdall, Gvfs, Gvfs-MTP, Cava, Figlet, Lolcat, Sl, Usbutils, Ptyxis, Cowsay, Fastfetch, Vim, Nano, Bat, Eza, Pipes.sh, Chrome, Brave Browser, Zen Browser, Firefox, Balena Etcher, And Ventoy.\n"
 
 sleep 1
 
@@ -8,7 +8,7 @@ echo -e "\nThis Script Runs Invisible, Not Seeing An Output Does Not Mean It Is 
 
 sudo pacman -Syu --noconfirm &>/dev/null
 
-sudo pacman -S git curl wget fish android-tools android-udev heimdall gvfs gvfs-mtp cava figlet lolcat sl usbutils ptyxis cowsay fastfetch vim nano bat eza --noconfirm &>/dev/null
+sudo pacman -S git curl wget fish acpi efibootmgr android-tools android-udev heimdall gvfs gvfs-mtp cava figlet lolcat sl usbutils ptyxis cowsay fastfetch vim nano bat eza --noconfirm &>/dev/null
 
 rm -rf /home/$USER/yay &>/dev/null
 git clone https://aur.archlinux.org/yay.git &>/dev/null
