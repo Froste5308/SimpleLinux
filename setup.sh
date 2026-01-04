@@ -11,7 +11,7 @@ echo -e "\nInstalling Dependencies\n"
 sleep 0.5
 
 sudo pacman -Syu --noconfirm
-sudo pacman -S --needed base-devel git curl wget fish cava android-tools android-udev gvfs gvfs-mtp usbutils --noconfirm
+sudo pacman -S --needed base-devel git curl wget usbutils --noconfirm
 
 sleep 2
 
