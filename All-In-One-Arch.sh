@@ -10,7 +10,7 @@ sleep 7
 
 sudo pacman -Syu --noconfirm
 
-sudo pacman -S git curl wget fish acpi efibootmgr android-tools android-udev heimdall gvfs gvfs-mtp cava figlet lolcat sl usbutils ptyxis cowsay fastfetch vim nano bat eza --noconfirm
+sudo pacman -S git curl wget fish acpi yt-dlp efibootmgr android-tools android-udev heimdall gvfs gvfs-mtp cava figlet lolcat sl usbutils ptyxis cowsay fastfetch vim nano bat eza --noconfirm
 
 rm -rf /home/$USER/yay
 git clone https://aur.archlinux.org/yay.git
@@ -43,6 +43,7 @@ Ventoy GUI/CLI
 Git
 Curl
 Wget
+Yt-Dlp
 Fish Shell
 Android-Tools (ADB Fastboot)
 Android-Udev
