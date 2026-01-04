@@ -13,6 +13,10 @@ git clone https://aur.archlinux.org/yay.git &>/dev/null
 cd yay &>/dev/null
 makepkg -si --noconfirm &>/dev/null
 
+clear
+
+figlet "Almost There!"
+
 yay -S pipes.sh --noconfirm &>/dev/null
 
 chsh -s /usr/bin/fish
