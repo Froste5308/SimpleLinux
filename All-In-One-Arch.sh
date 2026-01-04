@@ -21,6 +21,8 @@ cd
 
 yay -S pipes.sh google-chrome brave-browser zen-browser-bin firefox balena-etcher ventoy-bin --noconfirm
 
+mkdir -p /home/$USER/.config/fish
+
 chsh -s /usr/bin/fish
 
 cat > ~/.config/fish/config.fish << 'E0F'
