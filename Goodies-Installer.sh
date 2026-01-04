@@ -2,9 +2,11 @@
 
 echo -e "\nThis Script Installs Yay and Fish Shell, Switches Your Shell To Fish, Installs Fastfetch, Pipes, Cowsay, Htop, Git, Cava, Bat, Eza, Lolcat, Vim, Nano, And Sl, Then Edits Fish Config.\n"
 
-figlet "This Script Is Invisible, It Is Not Frozen!"
+echo -e "\nThis Script Is Invisible, It Is Not Frozen!\n"
 
 sudo pacman -S fish fastfetch git cava bat eza lolcat vim nano sl figlet cowsay --noconfirm &>/dev/null
+
+figlet "Still Working!"
 
 rm -rf /home/$USER/yay &>/dev/null
 git clone https://aur.archlinux.org/yay.git &>/dev/null
