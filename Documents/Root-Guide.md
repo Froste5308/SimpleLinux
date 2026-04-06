@@ -19,7 +19,13 @@
         - `sudo apt install adb fastboot`
       - Fedora
         - `sudo dnf install android-tools`
-    - If Your Distro Does Not Use One Of These Package Managers, Either Try Typing `adb`, `fastboot`, or `android-tools` Into Your Package Manager's Installation Command, or Follow This Guide
+    - If Your Distro Does Not Use One Of These Package Managers, Either Try Typing `adb`, `fastboot`, or `android-tools` Into Your Package Manager's Installation Command, or Follow This Guide, This Following Guide Works Without Sudo Permissions
       - Click [This](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
         - Unzip It
-        - 
+        - When You Have A Terminal In The Directory Of Platform Tools, You Can Run ADB & Fastboot Commands
+    - MacOS
+      - Open Your Terminal
+        ```bash
+        /bin/bash -c "$(curl -fsSL https://githubusercontent.com)"
+        brew install --cask android-platform-tools
+        ```
