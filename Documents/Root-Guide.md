@@ -29,3 +29,6 @@
         /bin/bash -c "$(curl -fsSL https://githubusercontent.com)"
         brew install --cask android-platform-tools
         ```
+      
+<h2 align=center>Getting To The Root of The Topic</h2>
+
