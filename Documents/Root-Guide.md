@@ -1,6 +1,6 @@
 <h1 align=center>How To Root Your Android Phone!</h1>
 
-<h2 align=center>Prerequisites<h2/>
+<h2 align=center>Prerequisites</h2>
 
 - Enable OEM Unlocking On Your Android Device (Some Devices Do Not Support This Feature)
   - Go To Settings --> About Phone --> Software Information --> Click The Build Number Many Times Until It Asks For Your Pin Or Says You're A Developer
