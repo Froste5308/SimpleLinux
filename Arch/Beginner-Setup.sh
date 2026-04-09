@@ -53,7 +53,7 @@ sudo systemctl enable NetworkManager
 sudo systemctl enable sshd
 sudo systemctl start sshd
 sudo systemctl enable sddm.service
-sudo systemctl start NetworkManager
+#sudo systemctl start NetworkManager
 sudo systemctl enable power-profiles-daemon.service
 sudo systemctl start power-profiles-daemon.service
 chsh -s /usr/bin/fish
@@ -119,6 +119,7 @@ do
 			exit
 			;;
 		"Go To KDE")
+			sudo systemctl start NetworkManager
 			sudo systemctl start sddm.service
 			;;
 		*)
