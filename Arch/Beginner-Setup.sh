@@ -59,8 +59,9 @@ sudo systemctl enable power-profiles-daemon.service
 sudo systemctl start power-profiles-daemon.service
 chsh -s /usr/bin/fish
 clear
-PS3='Would You Like Firefox or Chrome?'
-options=("Firefox" "Google Chrome")
+PS3='Would You Like Firefox, Chrome, None, or Something Else?
+'
+options=("Firefox" "Google Chrome" "Something Else" "None")
 
 select opt in "${options[@]}"
 do
@@ -73,6 +74,43 @@ do
 			yay -S google-chrome --noconfirm
 			break
 			;;
+		"None")
+			break
+			;;
+		"Something Else")
+				PS3='Brave, Zen Browser, Chromium, Librewolf, or None Of The Above?
+				'
+				options=("Brave" "Zen" "Chromium" "Librewolf" "None")
+
+				select opt in "${options[@]}"
+				do
+					case $opt in
+						"Brave")
+							yay -S brave-bin --noconfirm
+							break
+							;;
+						"Zen")
+							yay -S zen-browser-bin --noconfirm
+							break
+							;;
+						"Chromium")
+							sudo pacman -S chromium --noconfirm
+							break
+							;;
+						"Librewolf")
+							yay -S librewolf-bin --noconfirm
+							break
+							;;
+						"None")
+							break
+							;;
+						*)
+							echo "Invalid Option $REPLY"
+							;;
+						esac
+						done
+						break
+					;;
 		*)
 			echo "Invalid Option $REPLY"
 			;;
@@ -80,7 +118,8 @@ esac
 done
 
 clear
-PS3='Would You Like Localsend, Discord, or Both?'
+PS3='Would You Like Localsend, Discord, Neither, or Both? 
+'
 options=("Localsend" "Discord" "Both" "Neither")
 
 select opt in "${options[@]}"
@@ -107,7 +146,8 @@ do
 
 clear
 echo "Changing your shell typically requires a restart for it to fully take affect, would you like to reboot?"
-PS3='Please Select Your Choice: '
+PS3='What Would You Like To Do?
+'
 options=("Restart" "Go To KDE" "Exit To Typing")
 
 select opt in "${options[@]}"
