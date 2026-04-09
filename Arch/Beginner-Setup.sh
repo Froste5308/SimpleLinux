@@ -5,10 +5,11 @@ exit 1
 fi
 echo "This Script Will Install Apps, Configure Processes & Configs, And Change Your Shell! Press any key to continue."
 read -n 1 -s
-sudo pacman -S wget okular eog wl-clipboard curl git powwer-profiles-daemon base-devel bat nano btop vim scrcpy fastfetch android-tools android-udev gvfs gvfs-mtp heimdall usbutils fish yt-dlp plasma networkmanager flatpak sddm openssh konsole dolphin --needed --noconfirm
+command -v pacman >/dev/null 2>&1 || { echo "Error: Pacman not found. This script requires an Arch-based distro."; exit 1; }
+sudo pacman -S wget okular eog wl-clipboard curl git power-profiles-daemon base-devel bat nano btop vim scrcpy fastfetch android-tools android-udev gvfs gvfs-mtp heimdall usbutils fish yt-dlp plasma networkmanager flatpak sddm openssh konsole dolphin --needed --noconfirm || { echo "You are NOT connected to the internet!"; exit 1; }
 cd
 rm -rf yay
-		git clone https://aur.archlinux.org/yay.git
+		git clone https://aur.archlinux.org/yay.git || { echo "Clone Failed! Please Install Git And Dependencies!"; exit 1; }
 		cd yay
 		makepkg -si --noconfirm
 mkdir -p ~/.config/fish
